@@ -1,0 +1,81 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INLINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "matrixmul_accel_core",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul_accel_core"
+              }]
+          }
+        },
+        {
+          "functionName": "read_inputs",
+          "label": "read_a2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "read_inputs",
+          "label": "read_b2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "transMatrix",
+          "label": "transMatrix_label1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "transMatrix",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "mat_b"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "0"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "matrixmul_accel_core",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul_accel_core"
+              }]
+          }
+        }
+      ]
+    }]}

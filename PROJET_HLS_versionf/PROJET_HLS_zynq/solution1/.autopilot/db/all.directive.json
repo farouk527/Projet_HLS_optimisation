@@ -1,0 +1,53 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "matrixmul",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INLINE",
+            "option": [{
+                "name": "off",
+                "value": ""
+              }]
+          }
+        },
+        {
+          "functionName": "matrixmul_accel_core",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul_accel_core"
+              }]
+          }
+        },
+        {
+          "functionName": "read_inputs",
+          "label": "read_a2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "read_inputs",
+          "label": "read_b2",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "matrixmul_accel_core",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "matrixmul_accel_core"
+              }]
+          }
+        }
+      ]
+    }]}

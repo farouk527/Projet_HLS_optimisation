@@ -1,0 +1,9 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="matrixmul_accel_core" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="input" src_type="ap_uint&lt;32&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="2048" hw_interface="BRAM" hw_name="input" hw_bitwidth="32" hw_size_or_depth="2048"/>
+      <arg id="1" access_type="w" src_name="output" src_type="ap_uint&lt;32&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="1024" hw_interface="BRAM" hw_name="output" hw_bitwidth="32" hw_size_or_depth="1024"/>
+    </args>
+    <return src_type="void" src_bitwidth="0" hw_interface="" hw_name="" hw_bitwidth="0" offset="0x0"/>
+  </kernel>
+</root>

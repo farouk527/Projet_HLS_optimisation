@@ -1,0 +1,1060 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'I' (matrix_ti_mul.cpp:78) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'E' (matrix_ti_mul.cpp:63) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'G' (matrix_ti_mul.cpp:71) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:31 ; elapsed = 00:01:46 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 134.975 seconds; current allocated memory: 306.937 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.683 seconds; current allocated memory: 309.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'D'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_6_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_6_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_6_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_6_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_6_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_20', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 52, Depth = 57.
+INFO: [SCHED 204-61] Pipelining loop 'F'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('Ainverse_31_0_write_ln73', matrix_ti_mul.cpp:73) of variable 'Ainverse[0][0]', matrix_ti_mul.cpp:73 on local variable 'Ainverse[31][0]' and 'load' operation ('Ainverse_31_0_load', matrix_ti_mul.cpp:73) on local variable 'Ainverse[31][0]'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('Ainverse_31_0_write_ln73', matrix_ti_mul.cpp:73) of variable 'Ainverse[0][0]', matrix_ti_mul.cpp:73 on local variable 'Ainverse[31][0]' and 'load' operation ('Ainverse_31_0_load', matrix_ti_mul.cpp:73) on local variable 'Ainverse[31][0]'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('Ainverse_31_0_write_ln73', matrix_ti_mul.cpp:73) of variable 'Ainverse[0][0]', matrix_ti_mul.cpp:73 on local variable 'Ainverse[31][0]' and 'load' operation ('Ainverse_31_0_load', matrix_ti_mul.cpp:73) on local variable 'Ainverse[31][0]'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 0) between 'store' operation ('Ainverse_31_0_write_ln73', matrix_ti_mul.cpp:73) of variable 'Ainverse[0][0]', matrix_ti_mul.cpp:73 on local variable 'Ainverse[31][0]' and 'load' operation ('Ainverse_31_0_load', matrix_ti_mul.cpp:73) on local variable 'Ainverse[31][0]'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('mat_a_addr_20_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i_5', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 33, Depth = 65.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [HLS 200-871] Estimated clock period (11.4797ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'matrixmul_accel_core' consists of the following:	'phi' operation ('i', matrix_ti_mul.cpp:55) with incoming values : ('select_ln55_1', matrix_ti_mul.cpp:55) [1104]  (0 ns)
+	'add' operation ('add_ln55', matrix_ti_mul.cpp:55) [2135]  (1.83 ns)
+	'select' operation ('select_ln55_1', matrix_ti_mul.cpp:55) [2140]  (1.19 ns)
+	'icmp' operation ('icmp_ln57', matrix_ti_mul.cpp:57) [2144]  (1.43 ns)
+	'select' operation ('Ainverse[31][0]', matrix_ti_mul.cpp:57) [2145]  (0.698 ns)
+	'store' operation ('Ainverse_31_31_211_write_ln57', matrix_ti_mul.cpp:57) of variable 'Ainverse[31][0]', matrix_ti_mul.cpp:57 on local variable 'Ainverse[31][31]' [4545]  (0 ns)
+	blocking operation 6.34 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 138.873 seconds; current allocated memory: 358.938 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 48.889 seconds; current allocated memory: 421.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 43.095 seconds; current allocated memory: 426.643 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-104] Estimated max fanout for 'matrixmul_accel_core' is 32780 from HDL expression: (1'b1 == ap_CS_fsm_state9)
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_102411_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_325_32_1_1': 96 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 7.845 seconds; current allocated memory: 487.616 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:05:10 ; elapsed = 00:08:01 . Memory (MB): peak = 997.379 ; gain = 899.645
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 87.11 MHz
+INFO: [HLS 200-112] Total elapsed time: 481.956 seconds; peak allocated memory: 487.616 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (matrix_ti_mul.cpp:90:41)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:43 ; elapsed = 00:00:58 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'D' (matrix_ti_mul.cpp:61:20) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'F' (matrix_ti_mul.cpp:69:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:02:52 ; elapsed = 00:03:08 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 214.162 seconds; current allocated memory: 380.275 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.522 seconds; current allocated memory: 382.612 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'D_E'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 37, Depth = 38.
+INFO: [SCHED 204-61] Pipelining loop 'F_G'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 17, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 18, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 19, Depth = 21.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [HLS 200-871] Estimated clock period (11.4797ns) exceeds the target (target clock period: 10ns, clock uncertainty: 2.7ns, effective delay budget: 7.3ns).
+WARNING: [HLS 200-1016] The critical path in module 'matrixmul_accel_core' consists of the following:	'phi' operation ('i', matrix_ti_mul.cpp:55) with incoming values : ('select_ln55_1', matrix_ti_mul.cpp:55) [1104]  (0 ns)
+	'add' operation ('add_ln55', matrix_ti_mul.cpp:55) [2135]  (1.83 ns)
+	'select' operation ('select_ln55_1', matrix_ti_mul.cpp:55) [2140]  (1.19 ns)
+	'icmp' operation ('icmp_ln57', matrix_ti_mul.cpp:57) [2144]  (1.43 ns)
+	'select' operation ('Ainverse[31][0]', matrix_ti_mul.cpp:57) [2145]  (0.698 ns)
+	'store' operation ('Ainverse_31_31_973_write_ln57', matrix_ti_mul.cpp:57) of variable 'Ainverse[31][0]', matrix_ti_mul.cpp:57 on local variable 'Ainverse[31][31]' [2211]  (0 ns)
+	blocking operation 6.34 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 79.689 seconds; current allocated memory: 422.606 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 53.985 seconds; current allocated memory: 487.947 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 62.083 seconds; current allocated memory: 492.036 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-104] Estimated max fanout for 'matrixmul_accel_core' is 32793 from HDL expression: ((tmp_fu_31667_p3 == 1'd1) & (1'b1 == ap_CS_fsm_state10))
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_102411_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 8.999 seconds; current allocated memory: 549.499 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:05:35 ; elapsed = 00:08:50 . Memory (MB): peak = 997.660 ; gain = 899.938
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 87.11 MHz
+INFO: [HLS 200-112] Total elapsed time: 530.502 seconds; peak allocated memory: 549.499 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (matrix_ti_mul.cpp:90:41)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'D' (matrix_ti_mul.cpp:61:20) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'F' (matrix_ti_mul.cpp:69:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.486 seconds; current allocated memory: 164.793 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.377 seconds; current allocated memory: 167.130 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D_E'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 37, Depth = 39.
+INFO: [SCHED 204-61] Pipelining loop 'F_G'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 17, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 18, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 19, Depth = 21.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.926 seconds; current allocated memory: 169.795 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.738 seconds; current allocated memory: 175.792 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 2.911 seconds; current allocated memory: 179.502 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_325_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 5.262 seconds; current allocated memory: 190.177 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:24 ; elapsed = 00:01:14 . Memory (MB): peak = 997.594 ; gain = 899.945
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 120.23 MHz
+INFO: [HLS 200-112] Total elapsed time: 74.165 seconds; peak allocated memory: 190.177 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (matrix_ti_mul.cpp:90:41)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'D' (matrix_ti_mul.cpp:61:20) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'F' (matrix_ti_mul.cpp:69:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 33.414 seconds; current allocated memory: 165.372 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.427 seconds; current allocated memory: 167.708 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D_E'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 37, Depth = 39.
+INFO: [SCHED 204-61] Pipelining loop 'F_G'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 17, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 18, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 19, Depth = 20.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.347 seconds; current allocated memory: 170.551 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.135 seconds; current allocated memory: 176.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 3.567 seconds; current allocated memory: 180.459 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_325_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 4.786 seconds; current allocated memory: 191.049 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:24 ; elapsed = 00:01:15 . Memory (MB): peak = 997.270 ; gain = 899.648
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 120.23 MHz
+INFO: [HLS 200-112] Total elapsed time: 75.295 seconds; peak allocated memory: 191.049 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (matrix_ti_mul.cpp:90:41)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-115] Burst read of length 1024 and bit width 32 has been inferred on port 'INPUT' (matrix_ti_mul.cpp:14:11)
+INFO: [HLS 214-115] Burst read of length 1024 and bit width 32 has been inferred on port 'INPUT' (matrix_ti_mul.cpp:24:11)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 2 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:27 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'D' (matrix_ti_mul.cpp:61:20) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'F' (matrix_ti_mul.cpp:69:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/INPUT' to 'matrixmul_accel_core/INPUT_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 32.905 seconds; current allocated memory: 165.326 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.957 seconds; current allocated memory: 167.662 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D_E'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_2_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_1', matrix_ti_mul.cpp:65) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 37, Depth = 39.
+INFO: [SCHED 204-61] Pipelining loop 'F_G'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 17, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 18, distance = 1, offset = 1) between 'store' operation ('Ainverse_0_addr_3_write_ln73', matrix_ti_mul.cpp:73) of variable 'div62_i', matrix_ti_mul.cpp:73 on array 'Ainverse[0]', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_0_load_2', matrix_ti_mul.cpp:73) on array 'Ainverse[0]', matrix_ti_mul.cpp:53.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 19, Depth = 20.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.719 seconds; current allocated memory: 170.510 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.213 seconds; current allocated memory: 176.851 MB.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input_r' to 'matrixmul_accel_core/input_r_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 3.63 seconds; current allocated memory: 180.593 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/INPUT_r' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'input_r_r' and 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_325_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 5.405 seconds; current allocated memory: 191.635 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:26 ; elapsed = 00:01:25 . Memory (MB): peak = 997.738 ; gain = 900.043
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 120.23 MHz
+INFO: [HLS 200-112] Total elapsed time: 84.936 seconds; peak allocated memory: 191.635 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (matrix_ti_mul.cpp:90:41)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:26 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:29 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:32 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'D' (matrix_ti_mul.cpp:61:20) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'F' (matrix_ti_mul.cpp:69:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:16 ; elapsed = 00:00:40 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 41.413 seconds; current allocated memory: 164.797 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.356 seconds; current allocated memory: 167.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D_E'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 37, Depth = 39.
+INFO: [SCHED 204-61] Pipelining loop 'F_G'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 17, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 18, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 19, Depth = 21.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.989 seconds; current allocated memory: 169.799 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.808 seconds; current allocated memory: 175.796 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 2.645 seconds; current allocated memory: 179.506 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_325_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 4.652 seconds; current allocated memory: 190.181 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:24 ; elapsed = 00:01:21 . Memory (MB): peak = 997.312 ; gain = 899.664
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 120.23 MHz
+INFO: [HLS 200-112] Total elapsed time: 81.485 seconds; peak allocated memory: 190.181 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+WARNING: [HLS 214-180] Unsupport array_partition pragma on function argument, in 'call' (matrix_ti_mul.cpp:90:41)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'transMatrix_label0' (matrix_ti_mul.cpp:92) in function 'transMatrix' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+WARNING: [HLS 200-932] Cannot unroll loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'transMatrix' completely: variable loop bound.
+INFO: [XFORM 203-101] Partitioning array 'Ainverse' (matrix_ti_mul.cpp:53) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'transMatrix' into 'matrixmul_accel_core' (matrix_ti_mul.cpp:147) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'D' (matrix_ti_mul.cpp:61:20) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'F' (matrix_ti_mul.cpp:69:16) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse[0]' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 32.038 seconds; current allocated memory: 164.809 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.442 seconds; current allocated memory: 167.161 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D_E'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D_E): Unable to enforce a carried dependence constraint (II = 36, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_5_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 37, Depth = 39.
+INFO: [SCHED 204-61] Pipelining loop 'F_G'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 17, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: F_G): Unable to enforce a carried dependence constraint (II = 18, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_4_write_ln72', matrix_ti_mul.cpp:72) of variable 'div57_i', matrix_ti_mul.cpp:72 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:69) on array 'mat_a', matrix_ti_mul.cpp:139.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 19, Depth = 21.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.668 seconds; current allocated memory: 169.798 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.228 seconds; current allocated memory: 175.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 2.856 seconds; current allocated memory: 179.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_325_32_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 5.669 seconds; current allocated memory: 190.179 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_a_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:24 ; elapsed = 00:01:15 . Memory (MB): peak = 996.816 ; gain = 899.129
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 120.23 MHz
+INFO: [HLS 200-112] Total elapsed time: 75.297 seconds; peak allocated memory: 190.179 MB.

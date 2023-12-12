@@ -1,0 +1,787 @@
+INFO-FLOW: Workspace H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1 opened at Wed Dec 06 19:56:41 +0100 2023
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute     source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.124 sec.
+Command     ap_source done; 0.126 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Logiciels/xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Logiciels/xilinx/Vivado/2020.1/data;C:/Logiciels/xilinx/Vitis/2020.1/data
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Logiciels/xilinx/Vitis/2020.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Logiciels/xilinx/Vivado/2020.1/data/parts/arch.xml
+Command       ap_part_info done; 0.996 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       ap_family_info -name zynq -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.156 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -speed slow 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -default_slave_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.573 sec.
+Execute   set_part xc7z020-clg484-1 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Logiciels/xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Logiciels/xilinx/Vivado/2020.1/data;C:/Logiciels/xilinx/Vitis/2020.1/data
+Execute     ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_family_info -name zynq -data info 
+Execute     add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute       config_chip_info -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP 220} {BRAM 280} {URAM 0} 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       config_chip_info -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.142 sec.
+Execute   create_clock -period 10 -name default 
+Execute   source ./PROJET_HLS_zynq/solution1/directives.tcl 
+Execute     set_directive_inline -off matrixmul 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+Execute     set_directive_top -name matrixmul_accel_core matrixmul_accel_core 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+Execute     set_directive_pipeline read_inputs/read_a2 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute     set_directive_pipeline read_inputs/read_b2 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling matrix_ti_mul.cpp as C++
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.matrix_ti_mul.cpp.diag.yml -fno-limit-debug-info --sysroot C:/Logiciels/xilinx/Vitis/2020.1/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E matrix_ti_mul.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot -I C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.matrix_ti_mul.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.matrix_ti_mul.cpp.err.log 
+Command       ap_eval done; 0.335 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.4 seconds per iteration
+Execute       set_directive_top matrixmul_accel_core -name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'INLINE' off=positionBoolean1 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'PIPELINE' 
+INFO-FLOW: Setting directive 'TOP' name=matrixmul_accel_core 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  -directive=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/.systemc_flag -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.882 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  -directive=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/all.directive.json -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.053 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.137 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 2.2 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.err.log 
+Command         ap_eval done; 1.107 sec.
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 1.222 sec.
+Execute       clang_tidy -errorcheck xilinx-top-parameters H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-top-parameters -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.err.log 
+Command         ap_eval done; 0.626 sec.
+Command       clang_tidy done; 0.684 sec.
+Execute       clang_tidy -errorcheck xilinx-array-stream-check H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-array-stream-check -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.err.log 
+Command         ap_eval done; 0.67 sec.
+Command       clang_tidy done; 0.714 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/xilinx-dataflow-lawyer.matrix_ti_mul.pp.0.cpp.diag.yml H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/xilinx-dataflow-lawyer.matrix_ti_mul.pp.0.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/xilinx-dataflow-lawyer.matrix_ti_mul.pp.0.cpp.err.log 
+Command       ap_eval done; 0.735 sec.
+Execute       clang_tidy -errorcheck xilinx-warn-mayneed-no-ctor-attribute H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-warn-mayneed-no-ctor-attribute -fix-errors H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang-tidy.matrix_ti_mul.pp.0.cpp.err.log 
+Command         ap_eval done; 0.782 sec.
+Command       clang_tidy done; 0.833 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.matrix_ti_mul.pragma.2.cpp.diag.yml -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.pragma.2.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot -I C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.matrix_ti_mul.pragma.2.cpp.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.matrix_ti_mul.pragma.2.cpp.err.log 
+Command       ap_eval done; 0.867 sec.
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.0.bc -args  "H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrix_ti_mul.g.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.0.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.1.lower.bc -args H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.1.lower.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+Command         ap_eval done; 0.214 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.244 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.2.m1.bc -args H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Logiciels/xilinx/Vitis/2020.1/win64/lib/libhlsm_39.bc C:/Logiciels/xilinx/Vitis/2020.1/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Logiciels/xilinx/Vitis/2020.1/win64/lib/libhlsm_39.bc C:/Logiciels/xilinx/Vitis/2020.1/win64/lib/libhlsmc++_39.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.2.m1.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.745 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.785 sec.
+Execute       run_link_or_opt -opt -out H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=matrixmul_accel_core -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=matrixmul_accel_core -reflow-float-conversion -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.3.fpc.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 1.174 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.234 sec.
+Execute       run_link_or_opt -out H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.4.m2.bc -args H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Logiciels/xilinx/Vitis/2020.1/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Logiciels/xilinx/Vitis/2020.1/win64/lib/libfloatconversion_39.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.4.m2.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+Command         ap_eval done; 0.12 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.157 sec.
+Execute       run_link_or_opt -opt -out H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=matrixmul_accel_core 
+Execute         ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.5.gdce.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.143 sec.
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_interface 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Logiciels/xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -fhls -mllvm -hls-top-function-name=matrixmul_accel_core -mllvm -hls-db-dir -mllvm H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db -emit-llvm -c -mllvm -hls-bitcode-version=3.1 -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/top-io-fe.xml -mllvm -pass-remarks=supported-subset -mllvm -reflow-enable-interface-default-setting=false -mllvm -reflow-enable-slave-interface-default-setting=false -mllvm -gen-kernel-xml=false -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -x ir H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.lto.bc > H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.459 sec.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'transMatrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 998.008 ; gain = 900.352
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top matrixmul_accel_core -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.0.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 2.524 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.1.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+Command         transform done; 2.414 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.2.prechk.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.g.1.bc to H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.1.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'I' (matrix_ti_mul.cpp:78) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'E' (matrix_ti_mul.cpp:63) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'G' (matrix_ti_mul.cpp:71) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+Command         transform done; 2.879 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.1.tmp.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.166 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 998.008 ; gain = 900.352
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.2.bc -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+Command         transform done; 3.498 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 11.912 sec.
+Command     elaborate done; 27.024 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+Execute       ap_set_top_model matrixmul_accel_core 
+Execute       get_model_list matrixmul_accel_core -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model matrixmul_accel_core 
+Execute       preproc_iomode -model matrixmul 
+Execute       get_model_list matrixmul_accel_core -filter all-wo-channel 
+INFO-FLOW: Model list for configure: matrixmul matrixmul_accel_core
+INFO-FLOW: Configuring Module : matrixmul ...
+Execute       set_default_model matrixmul 
+Execute       apply_spec_resource_limit matrixmul 
+INFO-FLOW: Configuring Module : matrixmul_accel_core ...
+Execute       set_default_model matrixmul_accel_core 
+Execute       apply_spec_resource_limit matrixmul_accel_core 
+INFO-FLOW: Model list for preprocess: matrixmul matrixmul_accel_core
+INFO-FLOW: Preprocessing Module: matrixmul ...
+Execute       set_default_model matrixmul 
+Execute       cdfg_preprocess -model matrixmul 
+Execute       rtl_gen_preprocess matrixmul 
+INFO-FLOW: Preprocessing Module: matrixmul_accel_core ...
+Execute       set_default_model matrixmul_accel_core 
+Execute       cdfg_preprocess -model matrixmul_accel_core 
+Execute       rtl_gen_preprocess matrixmul_accel_core 
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: matrixmul matrixmul_accel_core
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model matrixmul 
+Execute       schedule -model matrixmul 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.768 sec.
+INFO: [HLS 200-111]  Elapsed time: 30.569 seconds; current allocated memory: 166.105 MB.
+Execute       syn_report -verbosereport -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.8 sec.
+Execute       db_write -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.sched.adb -f 
+Command       db_write done; 0.518 sec.
+INFO-FLOW: Finish scheduling matrixmul.
+Execute       set_default_model matrixmul 
+Execute       bind -model matrixmul 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.218 sec.
+INFO: [HLS 200-111]  Elapsed time: 1.619 seconds; current allocated memory: 168.456 MB.
+Execute       syn_report -verbosereport -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 1.033 sec.
+Execute       db_write -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.bind.adb -f 
+Command       db_write done; 0.738 sec.
+INFO-FLOW: Finish binding matrixmul.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model matrixmul_accel_core 
+Execute       schedule -model matrixmul_accel_core 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_38_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_54', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 52, Depth = 52.
+INFO: [SCHED 204-61] Pipelining loop 'F'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:72) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 33, Depth = 65.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'transMatrix_label1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('mat_b_addr_1_write_ln97', matrix_ti_mul.cpp:97) of variable 'mat_b_load', matrix_ti_mul.cpp:97 on array 'mat_b', matrix_ti_mul.cpp:140 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_b'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 35.214 sec.
+INFO: [HLS 200-111]  Elapsed time: 37.109 seconds; current allocated memory: 173.924 MB.
+Execute       syn_report -verbosereport -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 4.188 sec.
+Execute       db_write -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.sched.adb -f 
+Command       db_write done; 2.102 sec.
+INFO-FLOW: Finish scheduling matrixmul_accel_core.
+Execute       set_default_model matrixmul_accel_core 
+Execute       bind -model matrixmul_accel_core 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.423 sec.
+INFO: [HLS 200-111]  Elapsed time: 6.796 seconds; current allocated memory: 181.323 MB.
+Execute       syn_report -verbosereport -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 5.369 sec.
+Execute       db_write -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.bind.adb -f 
+Command       db_write done; 3 sec.
+INFO-FLOW: Finish binding matrixmul_accel_core.
+Execute       get_model_list matrixmul_accel_core -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess matrixmul 
+Execute       rtl_gen_preprocess matrixmul_accel_core 
+INFO-FLOW: Model list for RTL generation: matrixmul matrixmul_accel_core
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model matrixmul -top_prefix matrixmul_accel_core_ -sub_prefix matrixmul_accel_core_ -mg_file H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.compgen.tcl 
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+Command       create_rtl_model done; 0.204 sec.
+INFO: [HLS 200-111]  Elapsed time: 8.766 seconds; current allocated memory: 185.642 MB.
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.rtl_wrap.cfg.tcl 
+Execute       gen_rtl matrixmul -style xilinx -f -lang vhdl -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/vhdl/matrixmul_accel_core_matrixmul 
+Command       gen_rtl done; 0.251 sec.
+Execute       gen_rtl matrixmul -style xilinx -f -lang vlog -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/verilog/matrixmul_accel_core_matrixmul 
+Command       gen_rtl done; 0.143 sec.
+Execute       syn_report -csynth -model matrixmul -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/report/matrixmul_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.125 sec.
+Execute       syn_report -rtlxml -model matrixmul -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/report/matrixmul_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model matrixmul -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 1.221 sec.
+Execute       db_write -model matrixmul -f -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.adb 
+Command       db_write done; 1.379 sec.
+Execute       gen_tb_info matrixmul -p H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model matrixmul_accel_core -top_prefix  -sub_prefix matrixmul_accel_core_ -mg_file H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+Command       create_rtl_model done; 0.686 sec.
+INFO: [HLS 200-111]  Elapsed time: 5.312 seconds; current allocated memory: 198.550 MB.
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.rtl_wrap.cfg.tcl 
+Execute       gen_rtl matrixmul_accel_core -istop -style xilinx -f -lang vhdl -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/vhdl/matrixmul_accel_core 
+Command       gen_rtl done; 0.585 sec.
+Execute       gen_rtl matrixmul_accel_core -istop -style xilinx -f -lang vlog -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/verilog/matrixmul_accel_core 
+Command       gen_rtl done; 0.324 sec.
+Execute       syn_report -csynth -model matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/report/matrixmul_accel_core_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.203 sec.
+Execute       syn_report -rtlxml -model matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/syn/report/matrixmul_accel_core_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.105 sec.
+Execute       syn_report -verbosereport -model matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 5.328 sec.
+Execute       db_write -model matrixmul_accel_core -f -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.adb 
+Command       db_write done; 4.559 sec.
+Execute       gen_tb_info matrixmul_accel_core -p H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core 
+Execute       export_constraint_db -f -tool general -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.constraint.tcl 
+Execute       syn_report -designview -model matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.design.xml 
+Command       syn_report done; 0.234 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model matrixmul_accel_core -o H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks matrixmul_accel_core 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain matrixmul_accel_core 
+INFO-FLOW: Model list for RTL component generation: matrixmul matrixmul_accel_core
+INFO-FLOW: Handling components in module [matrixmul] ... 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.compgen.tcl 
+INFO-FLOW: Found component matrixmul_accel_core_fadd_32ns_32ns_32_5_full_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: Found component matrixmul_accel_core_fmul_32ns_32ns_32_4_max_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: Handling components in module [matrixmul_accel_core] ... 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.tcl 
+INFO-FLOW: Found component matrixmul_accel_core_fdiv_32ns_32ns_32_16_no_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_fdiv_32ns_32ns_32_16_no_dsp_1
+INFO-FLOW: Found component matrixmul_accel_core_fptrunc_64ns_32_2_no_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: Found component matrixmul_accel_core_fpext_32ns_64_2_no_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_fpext_32ns_64_2_no_dsp_1
+INFO-FLOW: Found component matrixmul_accel_core_dadd_64ns_64ns_64_7_full_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_dadd_64ns_64ns_64_7_full_dsp_1
+INFO-FLOW: Found component matrixmul_accel_core_dmul_64ns_64ns_64_7_max_dsp_1.
+INFO-FLOW: Append model matrixmul_accel_core_dmul_64ns_64ns_64_7_max_dsp_1
+INFO-FLOW: Found component matrixmul_accel_core_Ainverse.
+INFO-FLOW: Append model matrixmul_accel_core_Ainverse
+INFO-FLOW: Found component matrixmul_accel_core_mat_res.
+INFO-FLOW: Append model matrixmul_accel_core_mat_res
+INFO-FLOW: Append model matrixmul
+INFO-FLOW: Append model matrixmul_accel_core
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: matrixmul_accel_core_fadd_32ns_32ns_32_5_full_dsp_1 matrixmul_accel_core_fmul_32ns_32ns_32_4_max_dsp_1 matrixmul_accel_core_fdiv_32ns_32ns_32_16_no_dsp_1 matrixmul_accel_core_fptrunc_64ns_32_2_no_dsp_1 matrixmul_accel_core_fpext_32ns_64_2_no_dsp_1 matrixmul_accel_core_dadd_64ns_64ns_64_7_full_dsp_1 matrixmul_accel_core_dmul_64ns_64ns_64_7_max_dsp_1 matrixmul_accel_core_Ainverse matrixmul_accel_core_mat_res matrixmul matrixmul_accel_core
+INFO-FLOW: To file: write model matrixmul_accel_core_fadd_32ns_32ns_32_5_full_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_fmul_32ns_32ns_32_4_max_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_fdiv_32ns_32ns_32_16_no_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_fptrunc_64ns_32_2_no_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_fpext_32ns_64_2_no_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_dadd_64ns_64ns_64_7_full_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_dmul_64ns_64ns_64_7_max_dsp_1
+INFO-FLOW: To file: write model matrixmul_accel_core_Ainverse
+INFO-FLOW: To file: write model matrixmul_accel_core_mat_res
+INFO-FLOW: To file: write model matrixmul
+INFO-FLOW: To file: write model matrixmul_accel_core
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): matrixmul_accel_core
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.119 sec.
+Command       ap_source done; 0.12 sec.
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.632 sec.
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 1.2 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.117 sec.
+Command       ap_source done; 0.119 sec.
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Logiciels/xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=matrixmul_accel_core xml_exists=0
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.rtl_wrap.cfg.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.rtl_wrap.cfg.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.rtl_wrap.cfg.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.146 sec.
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.798 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.compgen.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+Execute         source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Command       ap_source done; 0.58 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.compgen.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.constraint.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=11 #gSsdmPorts=6
+Execute       source C:/Logiciels/xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.rtl_wrap.cfg.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul.tbgen.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.tbgen.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/matrixmul_accel_core.constraint.tcl 
+Execute       sc_get_clocks matrixmul_accel_core 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_dadd_5_full_dsp_64_ip.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_dmul_5_max_dsp_64_ip.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_fadd_3_full_dsp_32_ip.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_fdiv_14_no_dsp_32_ip.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_fmul_2_max_dsp_32_ip.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_fpext_0_no_dsp_32_ip.tcl 
+Execute       source H:/Bureau/PROJET_HLS_versionf/PROJET_HLS_zynq/solution1/impl/misc/matrixmul_accel_core_ap_fptrunc_0_no_dsp_64_ip.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:01 ; elapsed = 00:02:04 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+Execute       syn_report -model matrixmul_accel_core -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.64 MHz
+Command     autosyn done; 94.791 sec.
+Command   csynth_design done; 121.86 sec.
+Command ap_source done; 123.861 sec.
+Execute cleanup_all 

@@ -1,0 +1,1024 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: nonzero return value.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'transMatrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'read_a2' (matrix_ti_mul.cpp:15) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'read_b2' (matrix_ti_mul.cpp:25) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_56_2' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_61_4' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_69_6' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_78_9' (matrix_ti_mul.cpp:78) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_95_1' (matrix_ti_mul.cpp:95) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_61_4' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_69_6' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_63_5' (matrix_ti_mul.cpp:63) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_71_7' (matrix_ti_mul.cpp:71) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:23 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_55_1' (matrix_ti_mul.cpp:55:31) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_60_3' (matrix_ti_mul.cpp:60:31) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_77_8' (matrix_ti_mul.cpp:77:31) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:26 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.271 seconds; current allocated memory: 165.990 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.221 seconds; current allocated memory: 168.356 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_1_VITIS_LOOP_56_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_61_4'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: VITIS_LOOP_61_4): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: VITIS_LOOP_61_4): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: VITIS_LOOP_61_4): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: VITIS_LOOP_61_4): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: VITIS_LOOP_61_4): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_38_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_54', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 52, Depth = 52.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_69_6'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:72) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 33, Depth = 65.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_8_VITIS_LOOP_78_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_95_1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('mat_b_addr_1_write_ln97', matrix_ti_mul.cpp:97) of variable 'mat_b_load', matrix_ti_mul.cpp:97 on array 'mat_b', matrix_ti_mul.cpp:140 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_b'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.707 seconds; current allocated memory: 173.841 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 5.983 seconds; current allocated memory: 181.216 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 8.474 seconds; current allocated memory: 185.564 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 4.397 seconds; current allocated memory: 198.427 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:56 ; elapsed = 00:01:49 . Memory (MB): peak = 997.137 ; gain = 899.422
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.64 MHz
+INFO: [HLS 200-112] Total elapsed time: 108.78 seconds; peak allocated memory: 198.427 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'transMatrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'I' (matrix_ti_mul.cpp:78) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'E' (matrix_ti_mul.cpp:63) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'G' (matrix_ti_mul.cpp:71) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 30.54 seconds; current allocated memory: 166.085 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.673 seconds; current allocated memory: 168.421 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_38_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_54', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 52, Depth = 52.
+INFO: [SCHED 204-61] Pipelining loop 'F'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:72) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 33, Depth = 65.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'transMatrix_label1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('mat_b_addr_1_write_ln97', matrix_ti_mul.cpp:97) of variable 'mat_b_load', matrix_ti_mul.cpp:97 on array 'mat_b', matrix_ti_mul.cpp:140 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_b'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 35.591 seconds; current allocated memory: 173.883 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.277 seconds; current allocated memory: 181.283 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 23.062 seconds; current allocated memory: 185.632 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 6.338 seconds; current allocated memory: 198.482 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:57 ; elapsed = 00:02:42 . Memory (MB): peak = 998.051 ; gain = 894.371
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.64 MHz
+INFO: [HLS 200-112] Total elapsed time: 162.312 seconds; peak allocated memory: 198.482 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'matrix_ti_mul.cpp' ... 
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+WARNING: [HLS 207-1593] Ignore interface attribute or pragma which is not used in top function: C:/Logiciels/xilinx/Vitis/2020.1/common/technology/autopilot/39\utils/x_hls_utils.h:247:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::operator unsigned long long() const' into 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' (matrix_ti_mul.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'read_inputs(ap_uint<32>*, float (*) [32], float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'inversion_matrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'transMatrix(float (*) [32])' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 214-178] Inlining function 'write_outputs(float (*) [32], ap_uint<32>*)' into 'matrixmul_accel_core(ap_uint<32>*, ap_uint<32>*)' (matrix_ti_mul.cpp:138:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [XFORM 203-510] Pipelining loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'B' (matrix_ti_mul.cpp:56) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'I' (matrix_ti_mul.cpp:78) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'transMatrix_label1' (matrix_ti_mul.cpp:95) in function 'matrixmul_accel_core' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'D' (matrix_ti_mul.cpp:61) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'F' (matrix_ti_mul.cpp:69) in function 'matrixmul_accel_core' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Col' (matrix_ti_mul.cpp:116) in function 'matrixmul' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'E' (matrix_ti_mul.cpp:63) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'G' (matrix_ti_mul.cpp:71) in function 'matrixmul_accel_core' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Prod' (matrix_ti_mul.cpp:116) in function 'matrixmul' completely with a factor of 32.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:26 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [XFORM 203-541] Flattening a loop nest 'read_a1' (matrix_ti_mul.cpp:14:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'read_b1' (matrix_ti_mul.cpp:24:19) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'A' (matrix_ti_mul.cpp:55:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'C' (matrix_ti_mul.cpp:60:16) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'H' (matrix_ti_mul.cpp:77:16) in function 'matrixmul_accel_core'.
+WARNING: [HLS 200-960] Cannot flatten loop 'transMatrix_label0' (matrix_ti_mul.cpp:92:9) in function 'matrixmul_accel_core' the outer loop is not a perfect loop.
+INFO: [XFORM 203-541] Flattening a loop nest 'write_res1' (matrix_ti_mul.cpp:41:22) in function 'matrixmul_accel_core'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (matrix_ti_mul.cpp:118:16) in function 'matrixmul'.
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:18:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:28:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:57:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:64:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:72:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'Ainverse' (matrix_ti_mul.cpp:73:28)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_a' (matrix_ti_mul.cpp:79:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:97:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'mat_b' (matrix_ti_mul.cpp:98:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'res' (matrix_ti_mul.cpp:126:19)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul_accel_core' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/input' to 'matrixmul_accel_core/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'matrixmul_accel_core/output' to 'matrixmul_accel_core/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('a_load_2', matrix_ti_mul.cpp:118) on array 'a' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 16, Depth = 167.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 30.569 seconds; current allocated memory: 166.105 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.619 seconds; current allocated memory: 168.456 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'read_a1_read_a2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'read_b1_read_b2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'A_B'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'D'.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between 'store' operation ('Ainverse_addr_35_write_ln65', matrix_ti_mul.cpp:65) of variable 'conv42_i', matrix_ti_mul.cpp:65 on array 'Ainverse', matrix_ti_mul.cpp:53 and 'load' operation ('Ainverse_load_62', matrix_ti_mul.cpp:65) on array 'Ainverse', matrix_ti_mul.cpp:53.
+WARNING: [HLS 200-880] The II Violation in module 'matrixmul_accel_core' (Loop: D): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1) between 'store' operation ('mat_a_addr_38_write_ln64', matrix_ti_mul.cpp:64) of variable 'conv29_i', matrix_ti_mul.cpp:64 on array 'mat_a', matrix_ti_mul.cpp:139 and 'load' operation ('mat_a_load', matrix_ti_mul.cpp:62) on array 'mat_a', matrix_ti_mul.cpp:139.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_54', matrix_ti_mul.cpp:64) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 52, Depth = 52.
+INFO: [SCHED 204-61] Pipelining loop 'F'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('mat_a_load_4', matrix_ti_mul.cpp:72) on array 'mat_a', matrix_ti_mul.cpp:139 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_a'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 33, Depth = 65.
+INFO: [SCHED 204-61] Pipelining loop 'H_I'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'transMatrix_label1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('mat_b_addr_1_write_ln97', matrix_ti_mul.cpp:97) of variable 'mat_b_load', matrix_ti_mul.cpp:97 on array 'mat_b', matrix_ti_mul.cpp:140 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mat_b'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'write_res1_write_res2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 37.109 seconds; current allocated memory: 173.924 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 6.796 seconds; current allocated memory: 181.323 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_5_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 8.766 seconds; current allocated memory: 185.642 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul_accel_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/input_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul_accel_core/output_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul_accel_core' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_7_full_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'dmul_64ns_64ns_64_7_max_dsp_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_16_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fptrunc_64ns_32_2_no_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul_accel_core'.
+INFO: [HLS 200-111]  Elapsed time: 5.312 seconds; current allocated memory: 198.550 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_Ainverse_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_accel_core_mat_res_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:01 ; elapsed = 00:02:04 . Memory (MB): peak = 998.008 ; gain = 900.352
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul_accel_core.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul_accel_core.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 119.64 MHz
+INFO: [HLS 200-112] Total elapsed time: 124.358 seconds; peak allocated memory: 198.550 MB.

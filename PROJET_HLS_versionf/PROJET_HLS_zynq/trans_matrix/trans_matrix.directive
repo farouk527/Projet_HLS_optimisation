@@ -1,0 +1,36 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="INLINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul_accel_core" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul_accel_core"/>
+            </pragma>
+        </directive>
+        <directive functionName="read_inputs" label="read_a2" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="read_inputs" label="read_b2" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="transMatrix" label="transMatrix_label1" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="transMatrix" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="mat_b" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul_accel_core" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul_accel_core"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
